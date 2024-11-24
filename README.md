@@ -57,7 +57,7 @@ Configura las credenciales de Twitter:
    API_SECRET = "123"
    ACCESS_TOKEN = "123"
    ACCESS_TOKEN_SECRET = "123"
-Pasos para Ejecutar el Proyecto 🚀
+## Pasos para Ejecutar el Proyecto 🚀
 Abrir Anaconda Prompt
 Abre Anaconda Prompt desde el menú de inicio de Windows.
 
@@ -78,7 +78,7 @@ Dentro de la carpeta del proyecto, ejecuta el siguiente comando:
 El script buscará tweets relacionados con el término "tecnología" y clasificará los resultados por sentimiento (positivo, negativo, neutral).
 Nota: Si el script alcanza el límite de solicitudes de la API de Twitter, pausará automáticamente durante 15 minutos antes de continuar. Esto es debido a las limitaciones de la versión gratuita de la API de Twitter.
 
-Tecnologías Usadas 🛠️
+## Tecnologías Usadas 🛠️
 Python 3.9
 Anaconda: Gestión de entornos y dependencias.
 Tweepy: Extracción de datos desde Twitter.
