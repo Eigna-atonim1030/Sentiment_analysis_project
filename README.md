@@ -1,87 +1,119 @@
-# Sentiment Analysis Project 🎯  
-Análisis de sentimientos en redes sociales utilizando Python, Anaconda y técnicas de procesamiento de lenguaje natural (NLP).
+# 🎯 Sentiment Analysis Project
 
-## Tabla de Contenidos 📑
-- [Descripción](#descripción-📝)
-- [Características](#características-✨)
-- [Requisitos Previos](#requisitos-previos-🛠️)
-- [Instalación](#instalación-⚙️)
-- [Pasos para Ejecutar el Proyecto](#pasos-para-ejecutar-el-proyecto-🚀)
-- [Tecnologías Usadas](#tecnologías-usadas-🛠️)
-- [Contribuciones](#contribuciones-🤝)
-- [Licencia](#licencia-📜)
+Un proyecto para analizar sentimientos en redes sociales utilizando Python, Anaconda y procesamiento de lenguaje natural (NLP).
 
----
+## 📑 Tabla de Contenidos
 
-## Descripción 📝
-Este proyecto realiza un análisis de sentimientos basado en tweets extraídos de Twitter. Utilizando técnicas de procesamiento de lenguaje natural, clasifica los sentimientos en categorías como **positivo**, **negativo** o **neutral**. Es ideal para entender cómo los usuarios perciben ciertos temas o tendencias en redes sociales.
+- [Descripción](#-descripción)
+- [Características](#-características)
+- [Requisitos Previos](#️-requisitos-previos)
+- [Instalación](#️-instalación)
+- [Pasos para Ejecutar el Proyecto](#-pasos-para-ejecutar-el-proyecto)
+- [Tecnologías Usadas](#️-tecnologías-usadas)
+- [Contribuciones](#-contribuciones)
+- [Licencia](#-licencia)
 
----
+## 📝 Descripción
 
-## Características ✨
-- Extracción de datos desde Twitter mediante su API.
-- Limpieza y preprocesamiento de texto.
-- Clasificación de sentimientos en tiempo real.
-- Visualización gráfica de los resultados.
-- Manejo automático del límite de solicitudes en la API de Twitter.
+El proyecto **Sentiment Analysis Project** permite analizar los sentimientos de los tweets extraídos de Twitter, clasificándolos como **positivos**, **negativos** o **neutrales**. Este proyecto es ideal para entender la percepción del público sobre temas específicos o tendencias en redes sociales.
 
----
+## ✨ Características
 
-## Requisitos Previos 🛠️
-Antes de comenzar, asegúrate de tener:
-1. **Python 3.9 o superior** instalado.
-2. **Anaconda** configurado en tu sistema.
-3. Credenciales de la API de Twitter:
-   - Crea una cuenta en [Twitter Developer](https://developer.twitter.com/) y genera las claves necesarias.
-4. Dependencias como `tweepy`, `textblob`, y `matplotlib`.
+- Extracción de datos en tiempo real desde la API de Twitter
+- Limpieza y preprocesamiento del texto
+- Clasificación de sentimientos
+- Visualización gráfica de los resultados
+- Manejo automático de límites de solicitudes de la API de Twitter
 
----
+## 🛠️ Requisitos Previos
 
-## Instalación ⚙️
-Sigue estos pasos para configurar el entorno y las dependencias:
+Asegúrate de tener lo siguiente instalado y configurado antes de comenzar:
 
-### 1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/Eigna-atonim1030/Sentiment_analysis_project.git
-2. Comandos que debes ejecutar:
-Navega al directorio del proyecto:
+1. **Python 3.9 o superior**
+2. **Anaconda**
+3. Una cuenta en [Twitter Developer](https://developer.twitter.com/) con acceso a las claves de API:
+   - API Key
+   - API Secret
+   - Access Token
+   - Access Token Secret
+4. Dependencias necesarias:
+   - `tweepy`
+   - `textblob`
+   - `matplotlib`
+
+## ⚙️ Instalación
+
+Sigue los pasos a continuación para configurar el entorno y preparar el proyecto:
+
+### 1. Clonar el repositorio:
+```bash
+git clone https://github.com/Eigna-atonim1030/Sentiment_analysis_project.git
+```
+
+### 2. Navegar al directorio del proyecto:
+```bash
 cd Sentiment_analysis_project
-Crea y activa un entorno virtual:
+```
+
+### 3. Crear y activar un entorno virtual:
+```bash
 conda create -n sentiment_analysis_env python=3.9
 conda activate sentiment_analysis_env
-Instala las dependencias necesarias:
+```
 
+### 4. Instalar dependencias:
+```bash
 pip install -r requirements.txt
-Configura las credenciales de Twitter:
-Crea un archivo .env en el directorio raíz del proyecto y agrega las siguientes credenciales:
-env
-API_KEY=123
-API_SECRET=123
-ACCESS_TOKEN=123
-ACCESS_TOKEN_SECRET=123
-Pasos para Ejecutar el Proyecto 🚀
-1. Abrir Anaconda Prompt
+```
+
+### 5. Configurar las credenciales de Twitter:
+
+Crea un archivo `.env` en la raíz del proyecto y añade las credenciales de la API:
+```env
+API_KEY=tu_api_key
+API_SECRET=tu_api_secret
+ACCESS_TOKEN=tu_access_token
+ACCESS_TOKEN_SECRET=tu_access_token_secret
+```
+
+## 🚀 Pasos para Ejecutar el Proyecto
+
+Sigue estas instrucciones para ejecutar el proyecto:
+
+### 1. Abrir Anaconda Prompt
 Abre Anaconda Prompt desde el menú de inicio de Windows.
 
-2. Activar el entorno
-Escribe el siguiente comando para activar tu entorno virtual:
+### 2. Activar el entorno:
+```bash
 conda activate sentiment_analysis_env
-Esto activará el entorno donde configuraste todas las dependencias necesarias.
+```
 
-3. Navegar a tu carpeta de proyecto
-Cambia el directorio a la carpeta donde se encuentra tu archivo twitter_search.py. Por ejemplo:
+### 3. Navegar a tu carpeta de proyecto
+```bash
 cd C:\Users\HP\Documents\sentiment_analysis_project
-Asegúrate de que esta sea la ubicación correcta de tu proyecto.
+```
 
-4. Ejecutar el script
-Dentro de la carpeta del proyecto, ejecuta el siguiente comando:
+### 4. Ejecutar el script:
+```bash
 python twitter_search.py
-El script buscará tweets relacionados con el término "tecnología" y clasificará los resultados por sentimiento (positivo, negativo, neutral).
-Nota: Si el script alcanza el límite de solicitudes de la API de Twitter, pausará automáticamente durante 15 minutos antes de continuar. Esto es debido a las limitaciones de la versión gratuita de la API de Twitter.
+```
 
-Tecnologías Usadas 🛠️
-Python 3.9
-Anaconda: Gestión de entornos y dependencias.
-Tweepy: Extracción de datos desde Twitter.
-NLTK y TextBlob: Preprocesamiento y análisis de texto.
-Matplotlib: Visualización gráfica.
+El script buscará tweets relacionados con el término "tecnología" y los clasificará como positivos, negativos o neutrales.
+
+**Nota**: Si la API alcanza su límite de solicitudes, el script pausará automáticamente durante 15 minutos antes de continuar.
+
+## 🛠️ Tecnologías Usadas
+
+- Python 3.9
+- Anaconda: Gestión de entornos y dependencias
+- Tweepy: Extracción de datos desde Twitter
+- NLTK y TextBlob: Preprocesamiento y análisis de texto
+- Matplotlib: Visualización gráfica de los resultados
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, lea las directrices de contribución antes de enviar un pull request.
+
+## 📜 Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulte el archivo `LICENSE` para más detalles.
